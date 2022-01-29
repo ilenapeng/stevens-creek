@@ -8,10 +8,10 @@ For starters, it rained over 4 inches in the South Bay over this time period. Mo
 
 Storms throughout the month and a half also helped fill the Stevens Creek Reservoir. Only 10% of the reservoir's [3,138 acre-feet capacity](https://www.valleywater.org/your-water/local-dams-and-reservoirs) was filled at the beginning of the month. But by January, it was more than 50% full. To be fair, that means it's still about half empty, but it was nice nonetheless to see previously dry areas of the reservoir submerged again.
 
-![https://github.com/ilenapeng/stevens-creek/blob/main/charts/rainfall.png?raw=true]
+![Chart of precipitation in the San Jose area from December 1, 2021 to January 15, 2022](https://github.com/ilenapeng/stevens-creek/blob/main/charts/rainfall.png?raw=true)
 
 A creek's [flow rate](https://archive.epa.gov/water/archive/web/html/vms51.html) reflect how much water is moving from the watershed into the creek, with more water meaning faster flow. In the sections of Stevens Creek that ran above Stevens Creek Reservoir and above Highway 85, this meant that the flow rate went from nearly nothing to more than 100 cubic feet per second.
 
-![https://github.com/ilenapeng/stevens-creek/blob/main/charts/creeks.png?raw=true]
+![A chart of creek flow rate in three sections of Stevens Creek from December 1, 2021 to January 15, 2022](https://github.com/ilenapeng/stevens-creek/blob/main/charts/creeks.png?raw=true)
 
 *A methodological note: Precipitation in the National Weather Service data was sometimes indicated as "T," which indicates a barely measurable trace of rain. These values were replaced with zeroes.*
