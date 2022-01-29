@@ -1,3 +1,5 @@
+<style> h1 { display: none; } </style>
+
 ## Bay Area water levels & rainfall
 
 *About: The prompt for this project was something I miss from home - and for the first few weeks that I was home for the holidays, I remember simply marveling at the rain. Every time we passed Stevens Creek Reservoir, it felt like the water levels had increased. Driving through the mountains, we could hear the creek's water rushing. So for this project, I decided to take a look at these the creek, the reservoir and the South Bay's rainfall from December 1, 2021 to January 15, 2022*
