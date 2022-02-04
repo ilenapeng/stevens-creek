@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Bay's Rainy December</title>
+  <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <base target="_blank">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+    .image{text-align: center;}
+    img{max-width:80%;}
+    h2, h3, h6{font-family: Roboto; font-weight:500;}
+    p{font-family: Roboto; font-weight:400;}
+    p{margin-top:3px;}
+    p a{color:#4ab9fb}
+    p a:hover{color:#008cde}
+    p a:visited{color:#036fae}
+    .header-image{
+        background-image: url('https://live.staticflickr.com/1692/25057684333_ff9f716e6c_b.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        background-size: cover;}
+</style>
+
+<body>
+    <div class="header-image" style="max-width:100%; height:300px">
+    </div>
+
+    <div class="container pt-5" style="max-width:65%">
+    <h2 style="padding-bottom:8px;">The Bay Area's Rainy December</h2>
+    <h6>By Ilena Peng</h6>
+
+    <p><em>About this project: The prompt was something I missed from home - and for the first few weeks that I was home for the holidays, I remember simply marveling at the rain. Every time we passed Stevens Creek Reservoir (pictured above), it felt like the water levels had increased. Driving through the mountains, we could hear the creek’s water rushing. So for this project, I decided to take a look at the creek, the reservoir and the South Bay’s rainfall from December 1, 2021 to January 15, 2022 to see how much it actually rained.
+    </em></p>
+
+    <p>For starters, it rained over four inches in the San Jose area over this time period. Most of it was on December 13, when an atmospheric river brought over two inches of rain to the area.
+    </p>
+
+    <div class="image">
+    <img src="https://github.com/ilenapeng/stevens-creek/raw/main/charts/rainfall.png?raw=true">
+    </div>
+
+    <p>That's about two inches more than the average December in the area gets, making this past December the 17th rainiest one in the last century. </p>
+
+    <iframe title="December 2021 was the 17th rainiest December for the San Jose Area in the last century" aria-label="Interactive line chart" id="datawrapper-chart-P25kz" src="https://datawrapper.dwcdn.net/P25kz/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+
+    <p>The storms also helped fill the Stevens Creek Reservoir. Only 10% of the reservoir’s <a href="https://www.valleywater.org/your-water/local-dams-and-reservoirs">3,138 acre-feet capacity</a> was filled at the beginning of the month. But by January, it was more than 50% full. To be fair, that means it’s still about half empty, but it was nice nonetheless to see previously dry areas of the reservoir submerged again. The reservoir's capacity peaked on January 4 at 53.7% full - its highest capacity since July 1, 2020, which is as far back as ValleyWater's online historical data goes.
+    </p>
+
+    <iframe title="Stevens Creek Reservoir went from just 10% full to over half full after a rainy December" aria-label="Interactive area chart" id="datawrapper-chart-4jPVg" src="https://datawrapper.dwcdn.net/4jPVg/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+
+    <p>Lastly, Stevens Creek Reservoir is connected to Stevens Creek, which flows into the reservoir from above and then out of the reservoir's dam to San Francisco Bay. A creek’s <a href="https://archive.epa.gov/water/archive/web/html/vms51.html">flow rate</a> reflects how much water is moving from the watershed into the creek, with more water meaning faster flow. In the sections of Stevens Creek that ran above Stevens Creek Reservoir and above Highway 85, this meant that the flow rate went from nearly nothing to more than 100 cubic feet per second.
+    </p>
+
+    <div class="image">
+    <img style="max-width:100%;" src="https://github.com/ilenapeng/stevens-creek/blob/main/charts/creeks.png?raw=true">
+    </div>
+
+    <h3>The process</h3>
+    <em>
+    <p>This project started with reservoir data from ValleyWater's website. After experimenting with several ways of getting this data (like using the API, which turned out to have different fields than the website), I ended up using Selenium and BeautifulSoup to scrape the data on reservoir and the creek's sections into tables. 
+    </p>
+
+    <p>Because I couldn't find county-specific rainfall data, I turned to the National Weather Service for daily data on rainfall. This data came in PDFs by month, which I then copy-pasted into a spreadsheet for further cleaning. 
+        For example, precipitation in the National Weather Service data was sometimes indicated as “T,” which indicates a barely measurable trace of rain. These values were replaced with zeroes.
+    </p>
+
+    <p style="padding-bottom:10px;">Finally, for visualization, I used ggplot2 in R for the static charts and Datawrapper for the interactive ones.
+        All the code and data for this project is available on <a href="https://github.com/ilenapeng/stevens-creek">GitHub.</a>
+    </p>
+
+    </em>
+    </div>
+</body>
