@@ -42,7 +42,7 @@
     <p><em>About this project: The prompt was something I missed from home - and for the first few weeks that I was home for the holidays, I remember simply marveling at the rain. Every time we passed Stevens Creek Reservoir (pictured above), it felt like the water levels had increased. Driving through the mountains, we could hear the creek’s water rushing. So for this project, I decided to take a look at the creek, the reservoir and the South Bay’s rainfall from December 1, 2021 to January 15, 2022 to see how much it actually rained.
     </em></p>
 
-    <p>For starters, it rained over four inches in the San Jose area over this time period. Most of it was on December 13, when an atmospheric river brought over two inches of rain to the area.
+    <p>Even though it seemed to rain for many days, it turns out that most of the area’s rainfall came on a single day: December 13, when an atmospheric river brought 2.23 inches of rain to the area. Rainfall from the rest of the time period, all added together, contributed an additional 2.12 inches of rain.
     </p>
 
     <div class="image">
@@ -53,17 +53,19 @@
 
     <iframe title="December 2021 was the 17th rainiest December for the San Jose Area in the last century" aria-label="Interactive line chart" id="datawrapper-chart-P25kz" src="https://datawrapper.dwcdn.net/P25kz/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 
-    <p>The storms also helped fill the Stevens Creek Reservoir. Only 10% of the reservoir’s <a href="https://www.valleywater.org/your-water/local-dams-and-reservoirs">3,138 acre-feet capacity</a> was filled at the beginning of the month. But by January, it was more than 50% full. To be fair, that means it’s still about half empty, but it was nice nonetheless to see previously dry areas of the reservoir submerged again. The reservoir's capacity peaked on January 4 at 53.7% full - its highest capacity since July 1, 2020, which is as far back as ValleyWater's online historical data goes.
-    </p>
-
-    <iframe title="Stevens Creek Reservoir went from just 10% full to over half full after a rainy December" aria-label="Interactive area chart" id="datawrapper-chart-4jPVg" src="https://datawrapper.dwcdn.net/4jPVg/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
-
-    <p>Lastly, Stevens Creek Reservoir is connected to Stevens Creek, which flows into the reservoir from above and then out of the reservoir's dam to San Francisco Bay. A creek’s <a href="https://archive.epa.gov/water/archive/web/html/vms51.html">flow rate</a> reflects how much water is moving from the watershed into the creek, with more water meaning faster flow. In the sections of Stevens Creek that ran above Stevens Creek Reservoir and above Highway 85, this meant that the flow rate went from nearly nothing to more than 100 cubic feet per second.
+    <p>Beginning on December 13, the rainfall filled Stevens Creek. A creek’s <a href="https://archive.epa.gov/water/archive/web/html/vms51.html">flow rate</a> reflects how much water is moving from the watershed into the creek, with more water meaning faster flow. In the sections of Stevens Creek that ran above Stevens Creek Reservoir and above Highway 85, this meant that the flow rate went from nearly nothing to more than 100 cubic feet per second.
     </p>
 
     <div class="image">
     <img style="max-width:100%;" src="https://github.com/ilenapeng/stevens-creek/blob/main/charts/creeks.png?raw=true">
     </div>
+
+    <p>As with the creeks, the atmospheric river kicked off the initial increase in water levels in the Stevens Creek Reservoir. But water flowing in from Stevens Creek above the reservoir and more rainfall later in the month continued to fill the reservoir. Only 10% of the reservoir’s <a href="https://www.valleywater.org/your-water/local-dams-and-reservoirs">3,138 acre-feet capacity</a> was filled at the beginning of the month. But by January, it was more than 50% full.</p> 
+    
+    <p>To be fair, that means it’s still about half empty, but it was nice nonetheless to see previously dry areas of the reservoir submerged again. The reservoir's capacity peaked on January 4 at 53.7% full - its highest capacity since July 1, 2020, which is as far back as ValleyWater's online historical data goes.
+    </p>
+
+    <iframe title="Stevens Creek Reservoir went from just 10% full to over half full after a rainy December" aria-label="Interactive area chart" id="datawrapper-chart-4jPVg" src="https://datawrapper.dwcdn.net/4jPVg/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 
     <h3>The process</h3>
     <em>
@@ -75,7 +77,7 @@
     </p>
 
     <p style="padding-bottom:10px;">Finally, for visualization, I used ggplot2 in R for the static charts and Datawrapper for the interactive ones.
-        All the code and data for this project is available on <a href="https://github.com/ilenapeng/stevens-creek">GitHub.</a>
+        All the code and data for this project is available on <a style="color:#4ab9fb" href="https://github.com/ilenapeng/stevens-creek">GitHub.</a>
     </p>
 
     </em>
