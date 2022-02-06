@@ -10,6 +10,7 @@
 * creeks.csv: Stevens Creek data from [Valley Water](https://valleywateralert.org/scvwd/index.php)
 * reservoir.csv: Stevens Creek Reservoir data from Valley Water
 * rainfall.csv: Precipitation data from the [National Weather Service](https://www.weather.gov/wrh/Climate?wfo=mtr) - searched “Daily data for a month” in San Jose Area, CA
+* rainfall_trend.csv: Precipitation data from the [National Weather Service](https://www.weather.gov/wrh/Climate?wfo=mtr) - searched "Monthly summarized data" from 1901-2021
 
 #### [Charts](https://github.com/ilenapeng/stevens-creek/tree/main/charts)
 * Finished charts
